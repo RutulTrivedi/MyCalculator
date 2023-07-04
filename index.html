@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator by RK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 style="text-align: center; font-size: 40px; margin-top: 60px; margin-left: 613px; margin-right: 613px; padding: 10px;font-weight: 600;background-color: black;color: white;">Calculator</h1>
+    <div class="mainCalci">
+        <table>
+            <tr>
+                <td colspan="4">
+                    <input type="text" id="typeBox" style="text-align: right; height: 7vh;">
+                </td> 
+            </tr>
+            <tr>
+                <td><input style="font-weight: bolder;" class="btn btn-primary" onclick="clearBox()" type="button" value="AC"></td>
+                <td><input class="btn btn-primary" type="button" value="(" onclick="writeValue(this.value)"></td>
+                <td><input class="btn btn-primary" type="button" value=")" onclick="writeValue(this.value)"></td>
+                <td><input class="btn btn-primary" type="button" value="=" onclick="calcAns()"></td>
+            </tr>
+            <tr>
+                <td><input class="btn btnNum btn-warning" type="button" value="7" onclick="writeValue(this.value)"></td>
+                <td><input class="btn btn-warning" type="button" value="8" onclick="writeValue(this.value)"></td>
+                <td><input class="btn btn-warning" type="button" value="9" onclick="writeValue(this.value)"></td>
+                <td><input class="btn btn-primary" type="button" value="+" onclick="writeValue(this.value)"></td>
+            </tr>
+            <tr>
+                <td><input class="btn btn-warning" type="button" value="4" onclick="writeValue(this.value)"></td>
+                <td><input class="btn btn-warning" type="button" value="5" onclick="writeValue(this.value)"></td>
+                <td><input class="btn btn-warning" type="button" value="6" onclick="writeValue(this.value)"></td>
+                <td><input class="btn btn-primary" type="button" value="-" onclick="writeValue(this.value)"></td>
+            </tr>
+            <tr>
+                <td><input class="btn btn-warning" type="button" value="1" onclick="writeValue(this.value)"></td>
+                <td><input class="btn btn-warning" type="button" value="2" onclick="writeValue(this.value)"></td>
+                <td><input class="btn btn-warning" type="button" value="3" onclick="writeValue(this.value)"></td>
+                <td><input class="btn btn-primary" type="button" value="*" onclick="writeValue(this.value)"></td>
+            </tr>
+            <tr>
+                <td><input class="btn btn-warning" type="button" value="0" onclick="writeValue(this.value)"></td>
+                <td><input class="btn btn-primary" type="button" value="-/+" onclick="changeSign()"></td>
+                <td><input class="btn btn-primary" type="button" value="." onclick="writeValue(this.value)"></td>
+                <td><input class="btn btn-primary" type="button" value="/" onclick="writeValue(this.value)"></td>
+            </tr>
+        </table>
+    </div>
+    <h1 style="text-align: center; font-size: 15px; margin-left: 613px; margin-right: 613px; padding: 10px;font-weight: 600;background-color: black; color: white;">Designed by R K</h1>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

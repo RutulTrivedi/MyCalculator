@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: wheat;
+    font-family: 'Mulish';
+}
+.mainCalci{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+table{
+    padding: 20px;
+    border-radius: 10px;
+}
+tr{
+    padding-left: 10px;
+}
+input{
+    width: 100%;
+}
+.btn{
+    width: 70px;
+    padding: 20px;
+    border-radius: 0px;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+    width: 71px;
+    height: 65px;
+    border: 2px solid black;
+}
+td{
+    padding: 5px;
+}
